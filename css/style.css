@@ -69,3 +69,74 @@ h6 {
 }
 
 /* END OF CSS RESET */
+
+/* GLOBAL STYLES */
+
+:root {
+  --primary-color: #8053ff;
+  --main-body-color: #23155b;
+  --gray-light-color: #817d8e;
+  --white-color: #f4f4f4;
+  --main-bg-color: #f4f4f4;
+}
+* {
+  font-family: "Martel Sans", "sans-serif", "Noto Sans Khojki";
+}
+
+/* END OF GLOBAL STYLES */
+
+/* -------------------------------------------------------------------------------------- */
+body {
+  background-color: var(--gray-light-color);
+}
+
+nav {
+  background-color: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px 50px;
+}
+
+nav li {
+  list-style: none;
+  display: inline-block;
+  padding: 0 10px;
+}
+
+nav img {
+  margin-right: auto;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000000;
+  transition: all 0.3s ease 0s;
+}
+
+nav a:hover {
+  color: var(--white-color);
+}
+
+nav button {
+  background-color: var(--main-body-color);
+  text-decoration: #f4f4f4;
+  border-radius: 5px;
+  border: none;
+  padding: 8px;
+  color: var(--white-color);
+  transition: all 0.3s ease 0s;
+}
+
+nav button:hover {
+  background-color: var(--primary-color);
+  cursor: pointer;
+}
+
+#intro-cta {
+  background-color: none;
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100vw;
+  justify-content: space-evenly;
+}
