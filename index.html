@@ -13,10 +13,10 @@
 
       <ul class="nav-menu">
         <li>
-          <a href="http://">For Coders</a>
+          <a href="#">For Coders</a>
         </li>
         <li>
-          <a href="http://">Developers</a>
+          <a href="#">Developers</a>
         </li>
 
         <button onclick="document.location='/signup.html'">Join now</button>
@@ -152,22 +152,8 @@
           of tools for high-quality challenge design.
         </p>
       </section>
-      <section class="testimonials">
+      <section class="testimonialSection">
         <h1>Testimonials</h1>
-        <div class="testimonial-contributor">
-          <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="" />
-          <h3>Name: June Cha</h3>
-          <p>Position: Software Engineer</p>
-          <blockquote>
-            "This platform is an absolute game-changer for competitive
-            programmers. The extensive range of problems and challenges offered
-            here truly hones your skills and prepares you for any coding
-            competition. With detailed solutions and an active community, it's
-            the perfect environment to sharpen your coding prowess." The other
-            testimonials will be provided and added in the JavaScript
-            assignment.
-          </blockquote>
-        </div>
       </section>
       <section class="contact-us">
         <h1>Contact Us</h1>
@@ -191,12 +177,14 @@
           ></textarea>
         </form>
       </section>
-      <footer class="footer-text">
+      <footer id="footer-text">
         <p>
-          &#169; 2024 Your Competitive Programming Platform. All rights
-          reserved.
+          &#169; <span id="footer-year">{year}</span> - Your Competitive
+          Programming Platform. All rights reserved.
         </p>
       </footer>
     </main>
+    <script src="/scripts/testimonialPagination.js"></script>
+    <script src="/scripts/footerDate.js"></script>
   </body>
 </html>
